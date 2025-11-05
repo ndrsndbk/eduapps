@@ -13,6 +13,32 @@ SAND = "#F3EEE6"
 INK  = "#0F172A"
 
 st.set_page_config(page_title="Neuro‑diversity in Schools – Fundamentals", page_icon="🧠", layout="centered")
+st.markdown("""
+<style>
+/* Remove any unwanted top margin/padding that Streamlit injects */
+div.block-container {
+    padding-top: 0.5rem !important;
+    margin-top: 0 !important;
+}
+section.main > div:first-child {
+    padding-top: 0rem !important;
+    margin-top: 0rem !important;
+}
+/* Optional: tighten bottom padding too */
+div.block-container {
+    padding-bottom: 2rem !important;
+}
+/* Buttons a bit shorter on mobile */
+.stButton>button {
+    height: 2.8rem !important;
+    border-radius: 0.75rem !important;
+}
+/* Ensure background remains clean */
+html, body, [class*="css"] {
+    background-color: #F3EEE6 !important;
+}
+</style>
+""", unsafe_allow_html=True)
 
 CSS = """
 <style>
